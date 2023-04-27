@@ -1,0 +1,97 @@
+html, body{
+    min-height: 100%;
+}
+
+html{
+    display: flex;
+}
+
+body{
+    background: #01014a;
+    min-height: 100%;
+    width: 100%;
+    align-self: center;
+}
+.container{
+    width: 70%;
+    background: royalblue;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 100px 3px royalblue;
+}
+.sub-container{
+    width: 100%;
+    margin: 0 auto;
+}
+input[type="number"], #colonStyle{
+    transition: background 1s, color 1s, font-size 1s;
+}
+input{
+    font-size: 15px;
+    border-radius: 3px;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+    flex-grow: 1;
+    align-self: stretch;
+}
+form{
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.colon{
+    font-size: 1.5rem;
+    color: white;
+    font-family: monospace;
+    transition: text-shadow 1s, font-size 1s, color 1s, background 1s;
+}
+.form_active{
+    background: royalblue;
+    color: gold;
+    font-size: 2rem;
+    text-shadow: 0 0 4px 3px navy;
+}
+progress{
+    appearance: none;
+    position: relative;
+}
+.progress_styled{
+    width: 100%;
+    line-height: 2;
+    height: 2rem;
+}
+progress::-webkit-progress-bar {
+    background-color: #020254;
+    border-radius: 5px;
+    background-color: clear;
+    border: 2.5px solid blue;
+    box-shadow: inset 4px 4px 7px rgba(240,240,240,0.1);
+}
+progress::-webkit-progress-value {
+    background: #d3e2dc;
+    background: linear-gradient(to bottom, #d3e2dc 1%,#cde8dd 49%,#d3e2dc 100%);
+    background: -moz-linear-gradient(top, #d3e2dc 1%, #cde8dd 49%, #d3e2dc 100%);
+    background: -webkit-linear-gradient(top, gold 1%,darkgoldenrod 49%,goldenrod 100%);
+    background: -o-linear-gradient(top, gold 1%,darkgoldenrod 49%,goldenrod 100%);
+    background: -ms-linear-gradient(top, gold 1%,darkgoldenrod 49%,goldenrod 100%);
+    border-radius: 10px;
+    transition: width 1s linear;
+}
+#startButton, #resetButton{
+    background: gold;
+    color: navy;
+    box-shadow: 0 0 13px 2px navy;
+    transition: text-shadow .4s, box-shadow .5s, background .3s, color .2s;
+    border: none;
+}
+#startButton:hover, #resetButton:hover {
+	box-shadow: 0px 0px 0px 0px transparent;
+	background: navy;
+	color: gold;
+}

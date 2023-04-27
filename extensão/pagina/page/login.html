@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://kit.fontawesome.com/07f834e4ce.js" crossorigin="anonymous"></script> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <div id="principal">
+
+        <header class="header-top">
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="login.html"><i class="fas fa-cog"></i> Configurações</a></li>
+                    <li><a href="#"><i class="fas fa-address-card"></i> Contato</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <img src="../img/capa.jpg" alt="">
+
+        <div class="intervalo">
+            <form action="">
+
+                <fieldset class="grupo">
+                    
+                    <h3 class="subtitulo">Concentração</h3>
+                    
+                    <label for="duracao">Duração: </label>
+                    <input type="number" name="duracao" id="duracao">
+                    
+                    <p>Quando terminado: </p>
+                    <div class="check">
+                        
+                        <input type="checkbox" name="mostrar" id="notificacao">
+                        <label for="notificacao"> Mostrar notificações na área de trabalho</label>
+                        
+                        <input type="checkbox" name="mostrar2" id="notificacao2">
+                        <label for="notificacao2"> Mostrar notificações em outra aba</label>
+                        
+                    </div>
+                </form>
+        </fieldset>
+        </div>
+
+        <div class="intervalo">
+        <fieldset class="grupo">
+
+            <h3 class="subtitulo">Intervalo Curto</h3>
+            
+            
+            <label for="intervalo">Duração: </label>
+            <input type="number" name="intervalo" id="intervalo">
+            
+            <p>Quando terminado: </p>
+            
+            <div class="check">
+                <input type="checkbox" name="mostra3" id="notificacao3">
+                <label for="notificacao3"> Mostrar notificações na área de trabalho</label>
+                
+                <input type="checkbox" name="mostrar4" id="notificacao4">
+                <label for="notificacao4"> Mostrar notificações em outra aba</label>
+            </div>
+            
+        </fieldset>
+        </div>
+
+        <div class="intervalo">
+        <fieldset class="grupo">
+
+            <h3 class="subtitulo">Intervalo Longo</h3>
+            
+            <p>Tirar um intervalo longo a cada: </p>
+            
+            <select name="" id="">
+                <option value="0">Selecione uma opção</option>
+                <option value="1">A cada duas pausas (alternando)</option>
+                <option value="2">A cada três pausas</option>
+                <option value="3">A cada quatro pausas</option>
+                <option value="4">A cada cinco pausas</option>
+                <option value="5">A cada seis pausas</option>
+                <option value="6">A cada sete pausas</option>
+                <option value="7">A cada oito pausas</option>
+                <option value="8">A cada nove pausas</option>
+                <option value="9">A cada dez pausas</option>
+            </select>
+            <br>
+            <label for="intervaloLongo">Duração: </label>
+            <input type="number" name="intervaloLongo" id="intervaloLongo">
+            
+            <p>Quando terminado: </p>
+            
+            <div class="check">
+            
+                <input type="checkbox" name="mostrar5" id="notificacao5">
+                <label for="notificacao5"> Mostrar notificações na área de trabalho </label>
+                
+                <input type="checkbox" name="mostrar6" id="notificacao6">
+                <label for="notificacao6"> Mostrar notificações em outra aba </label>
+                
+            </div>
+        </fieldset>
+        </div>
+        <button class="botao" value="Salvar"> Salvar </button>
+        <button class="botao" value="Cancelar"> Cancelar </button>
+    </div>
+</body>
+</html>

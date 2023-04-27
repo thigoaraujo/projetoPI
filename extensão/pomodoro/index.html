@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="barraNav">
+        <a class="link" href="../index.html">Home</a>
+        <a class="link" href="#">Pomodoro</a>
+        <a class="link" href="">Focus Mode</a>
+        <a class="link" href="../pagina/index.html" target="_blank">Site</a>
+    </div>
+    <div class="container">
+        <div class="sub-container">
+            <form id="numbersForm">
+                <input type="number" id="minutesInput" min="0" placeholder="Minutos"><br>
+                <span id="colonStyle" class="colon"></span><br>
+                <input type="number" id="secondsInput" min="0" max="60" maxlength="2" step="5" placeholder="Segundos" value="">
+            </form>
+            <form>
+                <input type="button" id="startButton" placeholder="Iniciar" value="Iniciar">
+                <span class="colon">&nbsp;</span>
+                <input type="button" id="resetButton" placeholder="reset" value="Reset">
+            </form>      
+        </div>
+        <progress id="progressBar" max="0" value="0" class="progress_styled"></progress>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

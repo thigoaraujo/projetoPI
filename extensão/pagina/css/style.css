@@ -1,0 +1,163 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgba(225, 218, 218, 0.675);
+    justify-content: center;
+}
+/* Menu */
+
+.header-top{
+    height: 50px;
+    background: #37003b;
+    position: relative;
+}
+.header-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.header-nav ul{
+    margin: 0;
+    padding: 0;
+}
+.header-nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px 0 0;
+    padding: 10px;
+}
+.header-nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 5px;
+    transition: color .3s linear;
+}
+.header-nav a:hover{
+    color: #5b80e5;
+}
+/* Pagina Inicial */
+#principal{
+    width: 1024px;
+    margin: 20px auto;
+}
+.conteudo{
+    padding: 50px 100px;
+    text-align: center;
+}
+.conteudo h1{
+    font-size: 36px;
+    color: #464545;
+}
+.conteudo p{
+    font-size: 16px;
+    line-height: 2;
+    color: #555;
+}
+
+.galeria{
+    color: #555;
+    padding: 0 100px 50px 100px;
+    overflow: auto;
+}
+.galeria-cards{
+    width: 32%;
+    float: left;
+    text-align: center;
+
+}
+
+.p-title{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.about{
+    background-color: #37003b;
+    padding: 150px;
+    color: white;
+    background-image: linear-gradient( -75deg ,#37003b, #003d52);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    border-radius: 55px;
+}
+.about h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: normal;
+}
+.about p{
+    text-align: justify;
+    line-height: 1.5;
+    width: 70%;
+}
+/* Page Configurações */
+fieldset{
+    border: 0;
+}
+input, select, button{
+    border-radius: 10px;
+}
+.grupo{
+     margin-bottom: 1em;
+}
+.intervalo label{
+    margin-bottom: 0.2em;
+    display: block;
+}
+.intervalo .grupo{
+    
+    margin-right: 1em;
+}
+.grupo select{
+    padding: .2em;
+    border: 1px solid #5b80e5;
+    box-shadow: 2px 2px 2px #232532;
+    display: block;
+}
+.grupo select option{
+    padding-right: 1em;
+}
+/* .grupo input:focus, .grupo select:focus{
+    /* background: #d3d3ea33; */
+} 
+.botao{
+    font-size: 1.2em;
+    background: #4c0152;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1em;
+    padding: .2em .6em;
+}
+.botao:hover{
+    background: #2d1477;
+    box-shadow: inset 2px 2px 2px ;
+    text-shadow: none;
+}
+.check input[type="checkbox"]{
+    display:none;
+}
+.check input + label::before{
+    content: '';
+    width: 13px;
+    height: 13px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+.check input:checked + label::before{
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #37003b;
+    border: none;
+    padding: 1px;
+    background-position: center;
+}
